@@ -1,0 +1,281 @@
+
+/**********************************************
+GENERAL
+**********************************************/
+
+html {
+  height:100%;
+}
+
+body {
+  line-height: 1.6em;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+img {
+  max-width:100%;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+
+
+
+/**********************************************
+HEADING
+**********************************************/
+
+header {
+  position:relative;
+  float:left; /* floating gets rid of set width unless specified with width property */
+  margin:-20px 0 30px -10px;
+  padding:10px;
+  width:100%;
+  background-color:#384047;
+}
+
+#header-banner {
+  position:absolute;
+  width:75px;
+  height: 75%;
+  left:45%;
+}
+
+#logo {
+  float:left;
+  text-align:center;
+  margin:0;
+  padding:5px 5px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif; /* single quotes around external font name, use alternate generic font name (sans-serif) in case Google font fails */
+  margin:15px 0;
+  font-size:1.5em; /* ems are relative unit of measurement, 1em = 16px(default) */
+  font-weight:normal;
+  line-height:0.8em; /* amount of space btw lines of text specifically p text */
+}
+
+h2 {
+  font-size:.75em;
+  margin:-5px 0 0; /* top, left/right, bottom - negative values make things tighter */
+  font-weight:normal;
+}
+
+
+
+/**********************************************
+NAVIGATION
+**********************************************/
+
+nav {
+  float:right;
+  text-align:center;
+  padding:5px 0;
+  margin:10px 0 0;
+}
+
+nav ul {
+  list-style:none;
+  margin:0 10px;
+  padding:0;
+}
+
+nav li {
+  display:inline-block; /* appear side-by-side but retain block-like properties such as width/height */
+}
+
+nav a {
+  font-weight:lighter;
+  padding:15px 10px; /* makes clicks easier to hit because space around is larger */
+}
+
+
+
+
+/**********************************************
+CONTENT
+**********************************************/
+
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron h1 {
+  margin-top:0;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size:3em;
+  text-align:center;
+  color: inherit;
+  padding:0 5%;
+
+}
+.jumbotron a {
+  color: rgb(102, 178, 80);
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 200;
+  text-align:center;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+
+.content {
+  margin:30px auto;
+  max-width:75%;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.border-box {
+  position:relative;
+  overflow:auto;
+  margin:auto;
+  max-height:400px;
+  max-width:75%;
+  padding:1em;
+  border:1px solid #000;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.border-box h1 {
+  font-weight:normal;
+}
+
+.caption {
+  width:75%;
+  margin:auto;
+  padding:10px;
+  font-size:0.75em;
+  color:#fff;
+  text-align:center;
+  background-color:#384047;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Web Typography
+***********************************/
+
+blockquote {
+  margin:1.5em 10px;
+  padding:0.5em 10px;
+  quotes:"\201C";
+}
+
+blockquote:before {
+  content: url('../img/quotes.png')
+  margin-right:0.25em;
+  /*vertical-align:-0.4em;*/
+}
+
+blockquote:after {
+  content:close-quote;
+}
+
+blockquote p {
+  display:inline;
+}
+
+/* CSS Layout Techniques
+***********************************/
+
+.floated-img {
+  position:relative;
+  float:left;
+  width:50%;
+  margin:10px;
+}
+
+.primary {
+  background-color:rgba(229, 122, 101, 0.5);
+  float:left;
+  padding:5px;
+  width:50%;
+}
+
+.secondary {
+  float:right;
+  width:45%;
+}
+
+.col {
+  padding:5px;
+}
+
+.col h3, h4 {
+  margin-left: 10px;
+}
+
+
+
+/**********************************************
+FOOTER
+**********************************************/
+
+footer {
+  font-size:0.75em;
+  text-align:center;
+  clear:both;
+  padding-top:50px;
+  color:#ccc;
+}
+
+.social-icon {
+  width:20px;
+  height:20px;
+  margin:0 5px; /* 5px gives separation btw 2 icons */
+}
+
+
+/**********************************************
+COLORS
+**********************************************/
+
+/* rgb(52, 145, 149), rgb(229, 122, 101)*/
+
+nav a:hover {
+  /*color: rgb(229, 122, 101);*/
+  color: #EA9584;
+  font-weight:bolder;
+  font-size:1.5em;
+}
+
+header {
+  border-top:20px solid #000;
+  border-left:10px solid gray;
+  /*border-bottom:20px solid rgb(229, 122, 101);*/
+}
+
+/**********************************************
+MEDIA QUERIES
+**********************************************/
+
+@media (max-width: 768px) {
+
+  .floated-img {
+    width:100%;
+  }
+}

@@ -1,0 +1,46 @@
+/* NAV
+------------------------------------*/
+
+.nav {
+  /*background-color:#384047;*/
+  padding-top: 10px;
+  opacity:0.8;
+}
+
+.nav li {
+  display: inline;
+  padding: 5px 10px 5px 0;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+
+
+/* JUMBOTRON
+------------------------------------*/
+
+.jumbotron {
+  background-image: url('img/wave.jpg');
+  background-repeat: none;
+  opacity: 50%;
+  background-size:cover;
+}
+
+
+/* GALLERY
+------------------------------------*/
+
+.thumbnail img:hover {
+  border:5px solid black;
+}
+
+
+
+/* Learn More
+------------------------------------*/
+
+.learn-more {
+  background-color: rgba(0, 204, 255, 0.4);
+}

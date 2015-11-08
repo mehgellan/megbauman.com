@@ -1,0 +1,239 @@
+/**********************************************
+GENERAL
+**********************************************/
+
+body {
+  font-family:'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width:940px;
+  margin:0 auto;
+  padding:0 5%;
+}
+
+a {
+  text-decoration:none;
+}
+
+img {
+  max-width:100%; /* "fill width of parent container" if parent container shrinks, img shrinks */
+}
+
+h3 {
+  margin:0 0 1em 0;
+}
+
+
+
+/**********************************************
+HEADING
+**********************************************/
+
+header {
+  float:left; /* floating gets rid of set width unless specified with width property */
+  margin:0 0 30px 0;
+  padding:5px 0 0 0;
+  width:100%;
+}
+
+#logo {
+ text-align:center;
+ margin:0;
+}
+
+h1 {
+  font-family:'Changa One', sans-serif; /* single quotes around external font name, use alternate generic font name (sans-serif) in case Google font fails */
+  margin:15px 0;
+  font-size:1.75em; /* ems are relative unit of measurement, 1em = 16px(default) */
+  font-weight:normal;
+  line-height:0.8em; /* amount of space btw lines of text specifically p text */
+}
+
+h2 {
+  font-size:0.75em;
+  margin:-5px 0 0; /* top, left/right, bottom - negative values make things tighter */
+  font-weight:normal;
+}
+
+
+
+/**********************************************
+NAVIGATION
+**********************************************/
+
+nav {
+  text-align:center;
+  padding:10px 0;
+  margin:20px 0 0;
+}
+
+nav ul {
+  list-style:none;
+  margin:0 10px;
+  padding:0;
+}
+
+nav li {
+  display:inline-block; /* appear side-by-side but retain block-like properties such as width/height */
+}
+
+nav a {
+  font-weight:800;
+  padding:15px 10px; /* makes clicks easier to hit because space around is larger */
+}
+
+/**********************************************
+FOOTER
+**********************************************/
+
+footer {
+  font-size:0.75em;
+  text-align:center;
+  clear:both;
+  padding-top:50px;
+  color:#ccc;
+}
+
+.social-icon {
+  width:20px;
+  height:20px;
+  margin:0 5px; /* 5px gives separation btw 2 icons */
+}
+
+
+
+/**********************************************
+PAGE: PORTFOLIO
+**********************************************/
+
+#gallery {
+  margin:0;
+  padding:0;
+  list-style:none; /* removes bullet points */
+}
+
+#gallery li {
+  float:left; /* makes img appear side-by-side instead of on-top-of */
+  width:45%; /* each img only takes up 45% of parent element, 100/45=2r10 giving us 2 imgs with 10% space btw them */
+  margin:2.5%; /* gives 2.5% space on each side of img filling up 10% of space left over from width */
+  background-color:#f5f5f5;
+  color:#bdc3c7;
+}
+
+#gallery li a p {
+  margin:0;
+  padding:5%;
+  font-size:0.75em;
+  color:#bdc3c7;
+}
+
+
+
+
+
+/**********************************************
+PAGE: ABOUT
+**********************************************/
+
+.profile-photo {
+  display:block; /* block display allows use of auto margin to center imgs, default is inline which won't let you center */
+  max-width:150px;
+  margin:0 auto 30px;
+  border-radius:20px;
+}
+
+.about-text {
+  margin-left: 200px;
+}
+
+@media (max-width:460px) {
+  .about-text {
+    margin-left:10px;
+  }
+}
+
+
+
+/**********************************************
+PAGE: CONTACT
+**********************************************/
+
+.contact-info {
+  list-style:none;
+  padding:0;
+  margin:0;
+  font-size:0.9em;
+}
+
+.contact-info a {
+  display:block;
+  min-height:20px;
+  background-repeat:no-repeat;    /* backgrounds repeat by default but we only want one */
+  background-size:20px 20px;      /****** sizing down images makes them look sharp on HD displays :D ********/
+  padding:0 0 0 30px;       /* pushes link to right */ /*** cmd + / turns line into comment ***/
+  margin:0 0 10px;
+}
+
+.contact-info li.phone a { /* no space [ex. li .phone] b/c it's a list item with the class phone on it */
+  background-image:url('../img/phone.png'); /* two dots allows going up one directory b/c we need to get to img folder which is on an equal directory with the css folder with main.css (current file) */
+} /* could also have .contact-info .phone or just .phone itc b/c only 1 li element with class phone */
+
+.contact-info li.mail a {
+  background-image:url('../img/mail.png')
+}
+
+.contact-info li.twitter a {
+  background-image:url('../img/twitter.png')
+}
+
+
+
+/**********************************************
+PSEUDO-CLASSES
+**********************************************/
+
+ul li:hover ul.dropdown {
+  display:block;
+}
+
+/**********************************************
+COLORS
+**********************************************/
+
+/* site body */
+body {
+  background-color:#fff;
+  color:#999;
+}
+
+/* green header */
+header {
+  background:orange; /* #6ab47b */
+  border-color:orangered; /* #599a68 */
+}
+
+/* nav background on mobile */
+nav {
+  background:orangered;
+}
+
+/* logo text */
+h1, h2 {
+  color:#fff;
+}
+
+/* links */
+a {
+  color:#6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color:#fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color:orangered; /* #32673f */
+}

@@ -1,0 +1,96 @@
+@media screen and (min-width:480px) { /* 'screen' vs. 'print' b/c the page won't be printed out */
+
+  /**********************************************
+  TWO COLUMN LAYOUT
+  **********************************************/
+
+  #primary {
+    width:50%;
+    float:left;
+  }
+
+  #secondary {
+    width:40%;
+    float:right;
+  }
+
+
+  /**********************************************
+  3 * 5 = 15 (margin space)
+  100% - 15% = 85% (space for images)
+  85 / 3 = 28.333333333 (don't round!)
+  **********************************************/
+
+
+  /**********************************************
+  PAGE: PORTFOLIO
+  **********************************************/
+
+  #gallery li {
+    width:28.3333%;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear:left;
+  } /* b/c at certain widths the p text wraps to 3rd line making layout weird, fixed by having every 4th li item clear the left floats */
+
+
+
+  /**********************************************
+  PAGE: ABOUT
+  **********************************************/
+
+  .profile-photo {
+    float:left;
+    margin:0 5% 80px 0;
+  }
+
+} /* both 'screen' and min-width constraints need to be true for this code to executed */
+
+@media screen and (min-width:660px) { /* min-width:660px = "BREAKPOINT" b/c this is where css differs from original main.css styling */
+
+
+
+  /**********************************************
+  HEADER
+  **********************************************/
+
+  nav {
+    background:none;
+    float:right;
+    font-size:1.125em;
+    margin-right:5%;
+    text-align:right;
+    width:45%;
+  }
+
+  #logo {
+    float:left;
+    margin-left:5%;
+    text-align:left;
+    width:45%;
+  }
+
+  h1 {
+    font-size:2.5em;
+  }
+
+  h2 {
+    font-size:0.825em;
+    margin-bottom:20px;
+  }
+
+  header {
+    border-bottom:5px solid orangered; /* #599a68 */
+    margin-bottom:60px;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  nav a.selected, nav a:hover {
+    color:#000;
+  }
+
+}

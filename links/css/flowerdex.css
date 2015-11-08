@@ -1,0 +1,256 @@
+
+/***************************************
+GENERAL
+***************************************/
+
+a {
+	text-decoration:none;
+}
+
+
+
+/***************************************
+HEADER
+***************************************/
+
+header {
+	text-align:center;
+	background:url('img/tulips.jpg');
+	background-size:cover;
+	background-position:center;
+	min-height:200px;
+}
+
+header img {
+	height:150px;
+	width:150px;
+	margin: 40px 0px 0px 0px;
+	border: 7px solid white;
+	border-radius: 20px;
+}
+
+header h1 {
+	font-family: Helvetica;
+	font-size:70px;
+	display:block;
+}
+
+header ul {
+	padding:10px;
+}
+
+
+
+
+/***************************************
+TABLE
+***************************************/
+
+table {
+	border:none;
+	margin-bottom:20px;
+	width:100%;
+}
+
+#table-title {
+	text-align:center;
+	font-size:20px;
+}
+
+.table img {
+	height:230px;
+	width:180px;
+	padding:auto;
+}
+
+th {
+	align:justify;
+	text-align:center;
+	padding:5px;
+}
+
+
+
+
+
+/***************************************
+MAIN CONTENT
+***************************************/
+
+.content {
+	/*background-image: url("img/cork.gif");*/
+}
+
+.content a {
+	font-weight: bolder;
+	font-size:18px;
+}
+
+.content p {
+	font-family: Helvetica, sans-serif;
+}
+
+/***************
+NAVBAR
+****************/
+
+.navbar {
+	font-family:Helvetica;
+	height:100%;
+	width:230px;
+	float:left;
+	margin:0;
+	border: 3px solid red;
+}
+
+.navbar li {
+	display:inline-block;
+	list-style: none;
+	padding-left:20px;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.container {
+	position:relative;
+}
+
+.navbar h1 {
+	margin-bottom:1em;
+}
+
+h1 a {
+	display: block;
+}
+
+
+
+
+
+
+/***************
+BLOG
+****************/
+
+.main-blog {
+	display:block;
+	font-family:Helvetica;
+	font-size:16px;
+	font-variant:small-caps;
+	margin-left:240px;
+	padding-left: 10px;
+}
+
+.main-blog p {
+	margin:0;
+	margin-bottom:1em;
+	width:620px;
+}
+
+.main-blog span {
+	font-weight:bold;
+}
+
+small {
+	font-size:12px;
+	font-weight:bold;
+}
+
+strong {
+	font-weight:bold;
+}
+
+#tall {
+	height:640px;
+	width:516px;
+}
+
+#wide {
+	height:400px;
+	width:640px;
+}
+
+#small {
+	height:420px;
+	width:275px;
+}
+
+
+
+
+
+/***************************************
+FOOTER
+***************************************/
+
+footer {
+	position:relative;
+	clear:both;
+	height:50px;
+	text-align:center;
+	padding:10px;
+}
+
+
+/***************************************
+COLORS
+***************************************/
+
+/* HEADER
+****************/
+
+header {
+	color:white;
+}
+
+header ul {
+	background:black;
+}
+
+header a {
+	color:white;
+}
+
+
+/* TABLE
+****************/
+
+th {
+	color:#384047;
+}
+
+
+
+/* NAVBAR
+****************/
+
+h1 a {
+	color:#fff;
+}
+
+.navbar a {
+	color:#384047;
+}
+
+
+/* BLOG
+****************/
+
+.main-blog {
+	color:#384047;
+}
+
+.main-blog a {
+	background-color:#00bfff;
+	color:#ffffff;
+}
+
+/* FOOTER
+****************/
+
+footer {
+	color: white;
+	background-color: black;
+}
